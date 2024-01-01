@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Hack With Suraj -Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn coding, hacking, and cybersecurity to protect yourself from hackers. Explore technology tips, coding practices, and ethical hacking using EJS. Strengthen your digital defenses and safeguard your online presence.">
+    <meta name="keywords"
+        content="cybersecurity, online privacy, technology, coding, learn coding, learn hacking, learn cybersecurity, digital security">
+    <meta name="author" content="Hack With Suraj">
+    
+    <!-- Learn Coding, Hacking, Cybersecurity, and Technology Meta Tags -->
+    <meta name="category" content="Technology">
+    <meta name="subject" content="Coding, Hacking, Cybersecurity">
+    <meta name="tutorial" content="Learn coding, hacking, and cybersecurity with practical tips and guides.">
+    <meta name="education" content="Coding, Hacking, Cybersecurity">
+    <meta name="learning-path" content="Beginner to Advanced">
+    <meta name="skill-level" content="All levels">
+
+    <!-- Search Engine Crawling -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Page Level Social Media Tags -->
+    <meta property="og:title" content="Learn Coding, Hacking, and Cybersecurity: Guarding Your Digital Fortress">
+    <meta property="og:description"
+        content="Explore this comprehensive guide to learn coding, hacking, and cybersecurity. Discover technology tips, coding practices, and ethical hacking using EJS to strengthen your digital defenses and safeguard your online presence.">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="your-blog-url">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@HackWithsuraj">
+    <meta name="twitter:title" content="Learn Coding, Hacking, and Cybersecurity: Guarding Your Digital Fortress">
+    <meta name="twitter:description"
+        content="Explore this comprehensive guide to learn coding, hacking, and cybersecurity. Discover technology tips, coding practices, and ethical hacking using EJS to strengthen your digital defenses and safeguard your online presence.">
+    <meta name="twitter:image" content="your-image-url.jpg">
+
+</head>
+
+<body>
+  <%- include('../public/comp/Header')%>
+
+
+    <form class="relative " action="/contact" method="post" id="from">
+        <div class="space-y-12 mx-auto mt-8 mb-8 w-3/4">
+            <h1 class="font-black text-black " style="font-size: xx-large; text-align: center;">Contact Us</h1>
+        
+            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              <div class="sm:col-span-3">
+                <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                <div class="mt-2">
+                  <input type="text" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" name="Firstname">
+                </div>
+              </div>
+      
+              <div class="sm:col-span-3">
+                <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                <div class="mt-2">
+                  <input type="text"  id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" name="Lastname">
+                </div>
+              </div>
+      
+              <div class="sm:col-span-4">
+                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                <div class="mt-2">
+                  <input id="email"  type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" name="email">
+                </div>
+              </div>
+      
+              <div class="col-span-full">
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Street address</label>
+                <div class="mt-2">
+                  <input type="text"  id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" name="Streetaddress">
+                </div>
+              </div>
+      
+              <div class="sm:col-span-2 sm:col-start-1">
+                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">City</label>
+                <div class="mt-2">
+                  <input type="text"  id="city" autocomplete="address-level2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" name="City">
+                </div>
+              </div>
+      
+        
+      
+              <div class="sm:col-span-2">
+                <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">pin code</label>
+                <div class="mt-2">
+                  <input type="text"  id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" name="Postalcode">
+                </div>
+              </div>
+
+              <div class="col-span-full">
+                <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Massage</label>
+                <div class="mt-2">
+                  <textarea id="about"  rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" style="line-height: 2.5rem;" name="Massage"></textarea>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      
+
+        </div>
+        <div class="mt-16 mb-28 flex items-center justify-end gap-x-6  w-3/4">
+          <% if (error== null) { %>
+            <h1></h1>
+          <% } else if (error) { %>
+            <h1 style="font-size: smaller; color: red; margin-top: 4px;">
+              <%= error%>
+            </h1>
+          <% } %>
+          <button type="clear" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+          <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sand</button>
+        </div>
+      
+      </form>
+
+                    <!-- footer -->
+                    <%- include('../public/comp/Footer')%>
+
+                        <!-- All script -->
+                        <script src="/js/index.js"></script>
+
+</body>
+
+</html>
